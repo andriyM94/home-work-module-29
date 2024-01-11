@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hom Work JS</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <h1>Home Work JS moodul 29</h1>
+
+  <h2>-----1----</h2>
+  <p>
+    Напишіть такий JavaScript, щоб після натискання на кнопку button, елемент <b>&lt;div id="text"&gt;</b> зникав.
+  </p>
+
+  <div class="work-block">
+    <button id="clickBtn">Click</button>
+    <div id="text">&lt;div id="text"&gt;</div>
+  </div>
+
+  <h2>-----2----</h2>
+  <p>
+    Напишіть такий код, щоб після натискання на кнопку, вона зникала
+  </p>
+  
+  <div class="work-block">
+    <button id="hide">
+      Click me if you want hidden me
+    </button>
+  </div>
+
+  <h2>-----3----</h2>
+  <p>
+    Створіть дерево, яке показує/приховує дочірні вузли при кліці
+  </p>
+
+  <div>
+    <h2>Info blok</h2>
+    <p>parent 1.0 <span class="parent_1_0">-------</span></p>
+    <p>parent 2.1 <span class="parent_2_1">-------</span></p>
+    <p>parent 2.2 <span class="parent_2_2">-------</span></p>
+    <p>parent 3.1 <span class="parent_3_1">-------</span></p>
+    <p>parent 3.2 <span class="parent_3_2">-------</span></p>
+    <p>parent 4.1 <span class="parent_4_1">-------</span></p>
+    <p>parent 4.2 <span class="parent_4_2">-------</span></p>
+    <p>parent 5.0 <span class="parent_5_0">-------</span></p>
+  </div>
+  
+  <div class="work-block">
+    <!-- parent 1 start-->
+      <ol class="parent_1_0" id="ownerList">
+        <li><span>Child 1 of parrent 1</span></li>
+        <li><span>Child 2 of parrent 1</span></li>
+        <li><span>Child 3 of parrent 1</span></li>
+        <li> 
+          <span>Child 4 of parrent 1</span>       
+          <!-- parrent 2.1 start-->
+          <ol class="parent_2_1">
+            <li><span>Child 1 of parrent 2.1</span></li>
+            <li>
+              <span>Child 1 of parrent 2.1</span>
+              <!-- parrent 3.1 start-->
+              <ol class="parent_3_1">
+                <li><span>Child 1 of parrent 3.1</span>
+                  <!-- parrent 4.1 start -->
+                  <ol class="parent_4_1">
+                    <li><span>Child 1 of parrent 4.1</span></li>
+                    <li><span>Child 2 of parrent 4.1</span></li>
+                    <li><span>Child 3 of parrent 4.1</span></li>
+                    <li><span>Child 4 of parrent 4.1</span></li>
+                  </ol>
+                <!-- parrent 4.1 end -->
+                </li>
+              </ol>
+            </li>
+            <!-- parrent 3.1 end-->
+            <li><span>Child 1 of parrent 2.1</span></li>
+            <li><span>Child 2 of parrent 2.1</span></li>
+            <li><span>Child 3 of parrent 2.1</span></li>
+          </ol>
+          <!-- parrent 2.1 end-->
+        </li>
+
+        <li><span>Child 5 of parrent 1</span>
+          <!-- parrent 2.2 start-->
+          <ol class="parent_2_2">
+            <li><span>Child 1 of parrent 2.2</span></li>
+            <li><span>Child 2 of parrent 2.2</span></li>
+            <li>
+              <span>Child 3 of parrent 2.1</span>
+              <!-- parrent 3.2 start-->
+              <ol class="parent_3_2">
+                <li><span>Child 1 of parrent 3.2</span></li>
+                <li>
+                  <span>Child 2 of parrent 3.2</span>
+                  <!-- parrent 4.2 start-->
+                  <ol class="parent_4_1">
+                    <li><span>Child 1 of parrent 4.2</span></li>
+                    <li><span>Child 2 of parrent 4.2</span></li>
+                    <li>
+                      <span>Child 3 of parrent 4.2</span>
+                      <!-- parrent 5 start-->
+                      <ol class="parent_5_0">
+                        <li><span>Child 1 of parrent 5</span></li>
+                      </ol>
+                      <!-- parrent 5 start-->
+                    </li>
+                  </ol>
+                  <!-- parrent 4.2 end-->
+                </li>
+              </ol>
+                <!-- parrent 3.2 end-->
+            </li>
+          </ol>
+          <!-- parrent 2.2 end-->
+        </li>
+        <li><span>Child 6 of parrent 1</span></li>
+        <li><span>Child 7 of parrent 1</span></li>
+      </ul>
+    <!-- parent 1 end-->
+  </div>
+
+  <script src="./js/main.js"></script>
+</body>
+</html>

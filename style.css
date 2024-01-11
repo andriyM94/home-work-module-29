@@ -1,0 +1,60 @@
+.work-block {
+  margin: 0 auto;
+  padding: 10px;
+  border: 2px solid black;
+}
+
+#text {
+  border: 1px solid red;
+  padding: 10px;
+  width: 110px;
+  margin-top: 10px;
+}
+
+ol{
+  padding: 5px 5px 5px 20px;
+  margin-bottom: 5px;
+}
+
+li > span:hover {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.showMore::after {
+  content: ' ⇊';
+  color: red;
+}
+
+.parent_1_0{
+  border: 1px solid black;
+  background-color: azure;
+}
+.parent_2_1{
+  border: 1px solid green;
+  background-color: white;
+}
+.parent_2_2{
+  border: 1px solid red;
+  background-color: white;
+}
+.parent_3_1{
+  border: 1px solid fuchsia;
+  background-color: azure;
+}
+.parent_3_2{
+  border: 1px solid gold;
+  background-color: azure;
+}
+.parent_4_1{
+  border: 1px solid blue;
+  background-color: white;
+}
+.parent_4_2{
+  border: 1px solid brown;
+  background-color: white;
+}
+.parent_5_0{
+  border: 1px solid orangered;
+  background-color: azure;
+}
